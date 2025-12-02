@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Step 1: Load the Iris dataset
+# Step 1: Load the breast cancer dataset
 cancer = load_breast_cancer()
 X = cancer.data  # Features (sepal length, sepal width, petal length, petal width)
 y = cancer.target  # Target classes (0: setosa, 1: versicolor, 2: virginica)
@@ -35,3 +35,4 @@ print(classification_report(y_test, y_pred, target_names=cancer.target_names))
 #new_sample = [[5.1, 3.5, 1.4, 0.2]]  # Features of a new flower
 #prediction = knn.predict(new_sample)
 #print(f"\nPrediction for new sample: {iris.target_names[prediction[0]]}")
+
